@@ -2,22 +2,20 @@
     margin: 0;
     padding: 0;
     font-family: bugati;
-    cursor: none;
+    /* cursor: none; */
 }
 
 header {
     background-image: url("./2268691-piano-a-queue-dans-un-grand-theatre-gratuit-photo.jpg");
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: 118%;
-}
-
-html {
-    scroll-snap-type: mandatory;
-}
-
-header, .second-page {
+    background-size: cover;
+    height: 100vh;
     scroll-snap-align: start;
+}
+
+main {
+    height: 100vh;
 }
 
 .scroll-container {
@@ -25,14 +23,18 @@ header, .second-page {
     scroll-snap-type: y mandatory;
 }
 
+html {
+    scroll-snap-type: mandatory;
+}
+
 .text-header {
-    height: 100vh;
-    font-size: 22px;
+    height: 100%;
+    font-size: 195%;
     width: 60%;
     color: whitesmoke;
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     flex-direction: column;
 }
 
@@ -41,48 +43,34 @@ header, .second-page {
     color: black;
 }
 
-div {   
-    height: 100vh;
+.main-text {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 480%;
 }
 
-.cursor {
-    position: absolute;
-    border-radius: 100%;
-    translate: -50% -50%;
-    mix-blend-mode: difference;
-
+.background-image-main {
+    background-image: url("./7e6d8edd24fecb9392add3f4fda33903.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 75%;
 }
 
-#cursor {
-    z-index: 2;
-    background-color: black;
-    height: 40px;
-    width: 40px;
-}
 
 #cursor2 {
+    position: absolute;
     pointer-events: none;
     background-color: whitesmoke;
-    height: 40px;
-    width: 40px;
-}
-
-#cursor3 {
-    height: 65px;
-    width: 65px;
-    background: white;
-    position: absolute;
-    border-radius: 100%;
-    translate: -50% -50%;
+    height: 5%;
+    width: 5%;
     mix-blend-mode: difference;
-    transition: ease-out 0.3s;
+    border-radius: 100%;
 }
 
-/* .partition {
-    rotate: 8deg;
-    background-image: url("./Screenshot\ from\ 2023-10-25\ 16-11-34.png");
-    background-repeat: none;
-} */
 
 @font-face {
     font-family: bugati;
