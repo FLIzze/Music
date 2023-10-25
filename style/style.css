@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: bugati;
+    cursor: none;
+}
+
+header {
+    background-image: url("./2268691-piano-a-queue-dans-un-grand-theatre-gratuit-photo.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: 118%;
+}
+
+html {
+    scroll-snap-type: mandatory;
+}
+
+header, .second-page {
+    scroll-snap-align: start;
+}
+
+.scroll-container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.text-header {
+    height: 100vh;
+    font-size: 22px;
+    width: 60%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+::selection {
+    background: whitesmoke;
+    color: black;
+}
+
+div {   
+    height: 100vh;
+}
+
+.cursor {
+    position: absolute;
+    border-radius: 100%;
+    translate: -50% -50%;
+    mix-blend-mode: difference;
+
+}
+
+#cursor {
+    z-index: 2;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+}
+
+#cursor2 {
+    pointer-events: none;
+    background-color: whitesmoke;
+    height: 40px;
+    width: 40px;
+}
+
+#cursor3 {
+    height: 65px;
+    width: 65px;
+    background: white;
+    position: absolute;
+    border-radius: 100%;
+    translate: -50% -50%;
+    mix-blend-mode: difference;
+    transition: ease-out 0.3s;
+}
+
+/* .partition {
+    rotate: 8deg;
+    background-image: url("./Screenshot\ from\ 2023-10-25\ 16-11-34.png");
+    background-repeat: none;
+} */
+
+@font-face {
+    font-family: bugati;
+    src: url("./fonts/Cocogoose\ Condensed\ trial.ttf");
+}
